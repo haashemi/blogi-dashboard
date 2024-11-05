@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "extends": "@fullstacksjs/tsconfig/react",
+  "compilerOptions": {
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "paths": {
+      "@/mde/lib": ["./src/lib/index.ts"],
+      "@/mde/components": ["./src/components/index.ts"],
+      "@/mde/stores": ["./src/stores/index.ts"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "vite.config.ts"],
+  "exclude": ["node_modules"]
+}
